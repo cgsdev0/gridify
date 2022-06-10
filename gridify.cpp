@@ -126,6 +126,9 @@ int main(int argc, char** argv) {
             }
         }
     }
+    if (cell.lines.size()) {
+        row.cells.push_back(cell);
+    }
     if (row.cells.size()) {
         while (row.cells.size() < columnCount) {
             row.cells.push_back(Cell());
